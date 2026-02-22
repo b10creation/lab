@@ -5,30 +5,35 @@
 // =============================================
 const apps = [
   {
-    name: "App One",
-    icon: null, // "assets/icons/app1.png"
-    emoji: "📱",
-    description: "シンプルで使いやすいライフスタイルアプリ。日々のルーティンを記録・管理できます。",
-    ios: "https://apps.apple.com/",
-    android: "https://play.google.com/store/",
-    twitter: "https://x.com/"
+    name: "CoMuse - アート・展示会情報アプリ",
+    icon: "assets/icons/comuse.png",
+    description: "日本国内の美術館や博物館等で開催されている様々なアートイベント、美術展、企画展、展示会を検索したり、管理できるアプリです。",
+    ios: "https://apps.apple.com/jp/app/comuse-%E3%82%A2%E3%83%BC%E3%83%88-%E5%B1%95%E7%A4%BA%E4%BC%9A%E6%83%85%E5%A0%B1%E3%82%A2%E3%83%97%E3%83%AA/id6499095710",
+    android: "https://play.google.com/store/apps/details?id=com.b10.comuse",
+    twitter: "https://x.com/b10_comuse?s=21&t=ApUEjUbf3Wyn3KJg1g5eug"
   },
   {
-    name: "App Two",
-    icon: null,
-    emoji: "🎵",
-    description: "音楽を楽しむための新しい体験を提供するアプリ。お気に入りの曲を発見しよう。",
-    ios: "https://apps.apple.com/",
-    android: null,
-    twitter: "https://x.com/"
+    name: "ガチャ将棋",
+    icon: "assets/icons/gacha-shogi.png",
+    description: "ガチャで引いたランダムな駒で対戦する将棋。引いた駒の配置と王駒の選択によって戦略が無限に広がる新感覚将棋ゲーム。",
+    ios: "https://apps.apple.com/jp/app/%E3%82%AC%E3%83%81%E3%83%A3%E5%B0%86%E6%A3%8B/id6443967891",
+    android: "https://play.google.com/store/apps/details?id=com.b10.gachashogi",
+    twitter: "https://x.com/gacha_shogi?s=21&t=ApUEjUbf3Wyn3KJg1g5eug"
   },
   {
-    name: "App Three",
-    icon: null,
-    emoji: "🗓️",
-    description: "スケジュール管理をもっとスマートに。予定の共有や通知機能で毎日をサポート。",
-    ios: "https://apps.apple.com/",
-    android: "https://play.google.com/store/",
+    name: "ココミエ - AI性格診断アプリ",
+    icon: "assets/icons/cocomie.png",
+    description: "「自分のことを知り、大切な人との絆を深める」ココミエは、最新のAI技術と様々な性格診断を組み合わせた、新しい診断＆AI性格分析アプリです。",
+    ios: "https://apps.apple.com/jp/app/%E3%82%B3%E3%82%B3%E3%83%9F%E3%82%A8-ai%E6%80%A7%E6%A0%BC%E8%A8%BA%E6%96%AD%E3%82%A2%E3%83%97%E3%83%AA/id6756544610",
+    android: "https://play.google.com/store/apps/details?id=com.b10.cocomie",
+    twitter: null
+  },
+  {
+    name: "どうぶつモノマネ選手権",
+    icon: "assets/icons/animal-voice-challenge.png",
+    description: "あなたの鳴き真似、何点？AIが本気で採点します！動物の鳴き声をマネして、AIが類似度を10,000点満点で採点するエンタメアプリです。",
+    ios: "https://apps.apple.com/jp/app/%E3%81%A9%E3%81%86%E3%81%B6%E3%81%A4%E3%83%A2%E3%83%8E%E3%83%9E%E3%83%8D%E9%81%B8%E6%89%8B%E6%A8%A9/id6758698231",
+    android: "https://play.google.com/store/apps/details?id=com.b10creation.animalvoicechallenge",
     twitter: null
   }
 ];
@@ -41,7 +46,10 @@ const ICONS = {
     <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
   </svg>`,
   google: `<svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-    <path d="M3.18 23.76c.3.17.64.24.99.21L15.45 12 11.79 8.34 3.18 23.76zM20.45 10.38c-.37-.2-3.53-1.96-3.93-2.18L5.17.38A1.09 1.09 0 0 0 3.79.22L15.42 11.87l5.03-1.49zM2.61.9A1.1 1.1 0 0 0 2.43 1.5v21c0 .22.06.42.18.59l.09.09 11.77-11.77v-.27L2.61.9zM16.25 15.24l-3.83-1.1L21.39 22.5c.29.26.67.35 1.04.23l.02-.01-6.2-7.48z"/>
+    <path d="M12.954 11.616l2.957-2.957L6.36 3.291c-.633-.342-1.226-.39-1.736-.079l8.33 8.404z"/>
+    <path d="M16.415 15.078l3.074-1.729c.6-.336.929-.812.929-1.349 0-.537-.329-1.013-.929-1.349l-3.074-1.729-3.093 3.111 3.093 3.045z"/>
+    <path d="M4.515 3.1C4.178 3.354 3.9 3.8 3.9 4.547v14.905c0 .747.278 1.193.615 1.447l8.385-8.385L4.515 3.1z"/>
+    <path d="M12.952 12.384l-8.34 8.408c.51.31 1.105.26 1.735-.08l10.56-5.93-3.955-2.398z"/>
   </svg>`,
   x: `<svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
     <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
